@@ -3,7 +3,6 @@ package gestionxml;
  *
  * @author Lorena
  * @author Cristina
- * @autor Juan Carlos
  */
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
@@ -15,8 +14,9 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Text;
 //EL documento se llama "profesores"
 public class ActualizarXml {
-    public void ModificarXml (String profesores, String profesor, String DNI, String Nombre, String Apellido
-                                String nota, String Prefiere, String P1, String P2, String P3)
+   public void ModificarXml (String profesores, String profesor, String DNI,
+                              String Nombre, String Apellido, String nota,
+                              String Prefiere, String P1, String P2, String P3){
     //Cargamos el documento
     try {
          FileInputStream fileInputStream = new FileInputStream("profesor");
@@ -62,8 +62,8 @@ public class ActualizarXml {
     profesores.getDocumentElement().appendChild(p2Tag);
     p3Tag.appendChild(p3Txt);
     profesores.getDocumentElement().appendChild(p3Tag);
-    profesores.getDocumentElement().appendChild(direccionTag);
+    profesores.getDocumentElement().appendChild(p3Tag);
     
    
-    
+                              }
 }
