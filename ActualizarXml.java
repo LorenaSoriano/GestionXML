@@ -62,7 +62,6 @@ public class ActualizarXml {
     profesores.getDocumentElement().appendChild(p2Tag);
     p3Tag.appendChild(p3Txt);
     profesores.getDocumentElement().appendChild(p3Tag);
-    profesores.getDocumentElement().appendChild(p3Tag);
     
    
                               }
